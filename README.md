@@ -1,2 +1,2 @@
 # Self-Replicator
-> Working on Windows and Ubuntu Server
+Working on Windows and Ubuntu Server
