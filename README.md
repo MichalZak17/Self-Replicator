@@ -1,12 +1,6 @@
 # Self-Replicator
 
-> Working in Windows 10/8/7/XP/Vista
-
-> Working in Linux
-
-- [Installation](#installation)
-- [Clone](#Clone)
-
+> Working in Windows 10/8/7/XP/Vista and Linux
 ---
 
 ## Installation
