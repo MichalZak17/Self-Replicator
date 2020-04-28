@@ -5,7 +5,7 @@
 
 ## Installation
 
-- Make sure you installed `git`
+- Make sure you installed `git`, if not `sudo apt install git`
 
 - Just copy the computer file and run it with the `python3 Worm.py` or `python Worm.py` command
 
