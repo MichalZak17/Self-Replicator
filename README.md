@@ -1,7 +1,7 @@
 # Self-Replicator
 
-> Working in Windows 10/8/7/XP/Vista and Linux
----
+## Supported Systems
+- Working on Windows 10/8/7/XP/Vista and Linux
 
 ## Installation
 
