@@ -14,6 +14,6 @@ The program was created only for humorous purposes and is not intended to cause 
 
 ### Clone
 
-- Clone this repo to your local machine using `$ git clone https://github.com/Malvare17/Self-Replicator`
+- Clone this repo to your local machine using `$ git clone https://github.com/Malvare17/Self-Replicator.git`
 
 Remember that you run the script at your own risk. Also remember that the program was created for educational purposes and the author is not obliged to do anything.
