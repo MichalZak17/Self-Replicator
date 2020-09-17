@@ -46,7 +46,7 @@ class THREAD_(threading.Thread):
 
 
 def AUTHOR_():
-	print("Author: Malvare17 | https://github.com/Malvare17")
+	print("Author: Michał Żak | https://github.com/MichalZak17")
 
 def START_():
 	Thread1 = THREAD_()
