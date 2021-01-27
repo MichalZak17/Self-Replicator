@@ -44,10 +44,6 @@ class THREAD_(threading.Thread):
 			while True:
 				LINUX_()
 
-
-def AUTHOR_():
-	print("Author: Michał Żak | https://github.com/MichalZak17")
-
 def START_():
 	Thread1 = THREAD_()
 	Thread2 = THREAD_()
@@ -91,5 +87,4 @@ def START_():
 	Thread19.start()
 	Thread20.start()
 	
-	AUTHOR_()
 	START_()
