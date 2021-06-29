@@ -4,7 +4,7 @@
 The program was created only for humorous purposes and is not intended to cause any damage to computer equipment.
 
 ## Supported Systems
-- Working on Windows 10/8/7/XP/Vista and Linux.
+- Working on Windows 11/10/8/7/XP/Vista and Linux.
 
 ## Installation
 
