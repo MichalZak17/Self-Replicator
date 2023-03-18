@@ -1,5 +1,3 @@
-Certainly! Here is an extended description for the readme.md file using more professional language:
-
 # Self-Replicator
 Overview
 Self-Replicator is a lightweight, open-source Python program designed to demonstrate the language's ability to self-replicate. Developed by Malvare17, this project is intended for educational and entertainment purposes only and is not intended to cause any harm to computer equipment.
