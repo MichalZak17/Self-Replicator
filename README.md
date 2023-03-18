@@ -1,15 +1,22 @@
 # Self-Replicator
-Overview
-Self-Replicator is a lightweight, open-source Python program designed to demonstrate the language's ability to self-replicate. Developed by Malvare17, this project is intended for educational and entertainment purposes only and is not intended to cause any harm to computer equipment.
+## Overview
+The Self-Replicator program is a lightweight Python script that replicates itself indefinitely on the host system. It was created solely for entertainment purposes and is not intended to cause harm to any computer equipment.
+
+# Features
+- Lightweight and easy-to-use
+- Generates an infinite number of identical copies of itself on the host system
+- Works on Windows and Linux systems
+- Includes simple installation instructions
 
 ## Installation
-To install the program on your local machine, simply clone the repository to your local machine using the command $ git clone https://github.com/Malvare17/Self-Replicator.git.
+To run Self-Replicator on a Linux system, make sure that you have Git installed, and then clone the repository using the following command:
 
-If you are using Linux, ensure that Git is installed on your machine by typing $ sudo apt install git in your terminal.
+`$ git clone https://github.com/Malvare17/Self-Replicator.git`
 
-Once you have cloned the repository, navigate to the directory where the program is saved and run it using the command `$ python Run.py`.
+To run Self-Replicator on a Windows system, simply download the script and run it using Python.
 
-Please note that running the script is at your own risk, and the author is not responsible for any consequences that may arise. Self-Replicator is an educational and entertainment tool, and users should not use it for malicious purposes.
+## Disclaimer
+Self-Replicator is a program created for educational and entertainment purposes only. The author is not responsible for any damage caused by the program, and users assume all risks associated with its use. Please use the program responsibly and at your own risk.
 
 ## License
 Self-Replicator is released under the MIT License.
